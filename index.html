@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مرحبا بك</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #0d1117; color: #e6edf3;
-           display: flex; align-items: center; justify-content: center;
-           min-height: 100vh; margin: 0; text-align: center; }
-    h1 { font-size: 2.5rem; color: #58a6ff; }
-    p  { color: #8b949e; margin-top: 10px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتيجة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .result {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-  <div>
-    <h1>مرحبا بك! 👋</h1>
-    <p>هذا الموقع أُنشئ بواسطة DZ Agent</p>
-    <p style="margin-top:20px;font-size:0.85rem;color:#444">Powered by DZ-GPT</p>
-  </div>
+    <div class="result">
+        <h2>النتيجة</h2>
+        <p>هذا هو المكان الذي ستعرض فيه النتيجة.</p>
+        <p id="result-text">النتيجة النهائية هي: <span id="result-value">تم إدراج النتيجة هنا</span></p>
+    </div>
+
+    <script>
+        // يمكن استخدام هذا الجزء لاستقبال أو حساب النتيجة وعرضها
+        document.addEventListener('DOMContentLoaded', function() {
+            const resultElement = document.getElementById('result-value');
+            // يمكنك تغيير النتيجة هنا أو من خلال دالة ما
+            resultElement.textContent = 'نجاح';
+        });
+    </script>
 </body>
 </html>
