@@ -1,6 +1,4 @@
-// هنا يمكن إضافة أي كود JavaScript مطلوب
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('الصفحة تم تحميلها بنجاح');
+// إضافة حدث للزر في قسم Hero
+document.querySelector('.hero button').addEventListener('click', () => {
+    // إضافة منطق هنا
 });
-
-// يمكن إضافة وظائف أو تفاعلات أخرى هنا
