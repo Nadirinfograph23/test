@@ -1,15 +1,80 @@
-/* هنا يمكن إضافة أي أنماط CSS مطلوبة */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Tajawal', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 40px auto;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.infograph {
+    padding: 2rem;
+}
+
+.infograph-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infograph-item {
+    margin: 20px;
+    width: calc(50% - 40px);
+    background-color: #f7f7f7;
     padding: 20px;
-    background-color: #f9f9f9;
     border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.infograph-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.infograph-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.infograph-item p {
+    font-size: 14px;
+    color: #666;
 }
