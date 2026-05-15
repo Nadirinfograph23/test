@@ -1,0 +1,88 @@
+/* متغيرات CSS */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #1a1d23;
+  --text-color: #ffffff;
+  --dark-background-color: #121212;
+  --dark-text-color: #ffffff;
+}
+
+/* إعدادات عامة */
+body {
+  background-color: var(--background-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark/Light mode */
+body.dark-mode {
+  --background-color: var(--dark-background-color);
+  --text-color: var(--dark-text-color);
+}
+
+/* انتقالات وتأثيرات hover */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* خطوط أفضل ومسافات متناسقة */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* استجابة محسّنة للجوال */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* تأثيرات دقيقة على البطاقات والأزرار */
+.card {
+  background-color: var(--background-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Box shadows وborder radius عصرية */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
